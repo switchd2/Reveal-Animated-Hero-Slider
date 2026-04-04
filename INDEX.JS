@@ -2,7 +2,6 @@ const items = document.querySelectorAll('.slider-item');
 const itemCount = items.length;
 const nextItem = document.querySelector('.next');
 const previousItem = document.querySelector('.previous');
-const navItem = document.querySelector('a.toggle-nav');
 let count = 0;
 
 function showNextItem() {
@@ -15,7 +14,6 @@ function showNextItem() {
   }
 
   items[count].classList.add('active');
-  console.log(count);
 }
 
 function showPreviousItem() {
@@ -28,12 +26,6 @@ function showPreviousItem() {
   }
 
   items[count].classList.add('active');
-  // Check if working...
-  console.log(count);
-}
-
-function toggleNavigation(){
-  this.nextElementSibling.classList.toggle('active');
 }
 
 function keyPress(e) {
@@ -49,4 +41,3 @@ function keyPress(e) {
 nextItem.addEventListener('click', showNextItem);
 previousItem.addEventListener('click', showPreviousItem);
 document.addEventListener('keydown', keyPress);
-navItem.addEventListener('click', toggleNavigation);

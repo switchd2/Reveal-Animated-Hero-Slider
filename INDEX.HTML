@@ -1,11 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reveal Animated Hero Slider</title>
+  <link rel="stylesheet" href="INDEX.CSS">
+</head>
+<body>
 <nav class="flex-nav">
   <div class="container">
     <div class="grid">
-      <div class="column-xs-9 column-md-8">
+      <div class="column-xs-6">
         <p id="logo">Japan<span id="highlight">.</span></p>
       </div>
-      <div class="column-xs-3 column-md-4">
-        <a href="#" class="toggle-nav">Menu <i class="ion-navicon-round"></i></a>
+      <div class="column-xs-6">
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Discover</a></li>
@@ -22,105 +30,53 @@
         <ul class="slider">
           <li class="slider-item active">
             <div class="grid vertical">
-              <div class="column-xs-12 column-md-2 hide-mobile">
-                <div class="intro">
-                  <a href="#">
-                    <h1 class="title"><span class="underline">Explore Tokyo</span></h1>
-                  </a>
-                </div>
-              </div>
-              <div class="column-xs-12 column-md-10">
+              <div class="column-xs-12">
                 <div class="image-holder">
                   <img src="https://assets.codepen.io/1159990/tokyo.jpg">
                 </div>
-                <div class="grid">
-                  <div class="column-xs-12 column-md-9">
-                    <div class="intro show-mobile">
-                      <a href="#">
-                        <h1 class="title"><span class="underline">Explore Tokyo</span></h1>
-                      </a>
-                    </div>
-                    <p class="description">Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples.</p>
-                  </div>
+                <div class="intro">
+                  <h1 class="title"><span class="underline">Explore Tokyo</span></h1>
                 </div>
+                <p class="description">Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples.</p>
               </div>
             </div>
           </li>
           <li class="slider-item">
             <div class="grid vertical">
-              <div class="column-xs-12 column-md-2 hide-mobile">
-                <div class="intro">
-                  <a href="#">
-                    <h1 class="title"><span class="underline">Explore Kyoto</span></h1>
-                  </a>
-                </div>
-              </div>
-              <div class="column-xs-12 column-md-10">
+              <div class="column-xs-12">
                 <div class="image-holder">
                   <img src="https://assets.codepen.io/1159990/kyoto.jpg">
                 </div>
-                <div class="grid">
-                  <div class="column-xs-12 column-md-9">
-                    <div class="intro show-mobile">
-                      <a href="#">
-                        <h1 class="title"><span class="underline">Explore Kyoto</span></h1>
-                      </a>
-                    </div>
-                    <p class="description">Kyoto is famous for its numerous classical Buddhist temples, gardens, imperial palaces, Shinto shrines and traditional wooden houses.</p>
-                  </div>
+                <div class="intro">
+                  <h1 class="title"><span class="underline">Explore Kyoto</span></h1>
                 </div>
+                <p class="description">Kyoto is famous for its numerous classical Buddhist temples, gardens, imperial palaces, Shinto shrines and traditional wooden houses.</p>
               </div>
             </div>
           </li>
           <li class="slider-item">
             <div class="grid vertical">
-              <div class="column-xs-12 column-md-2 hide-mobile">
-                <div class="intro">
-                  <a href="#">
-                     <h1 class="title"><span class="underline">Explore Osaka</span></h1>
-                  </a>
-                </div>
-              </div>
-              <div class="column-xs-12 column-md-10">
+              <div class="column-xs-12">
                 <div class="image-holder">
                   <img src="https://assets.codepen.io/1159990/osaka.jpg">
                 </div>
-                <div class="grid">
-                  <div class="column-xs-12 column-md-9">
-                    <div class="intro show-mobile">
-                      <a href="#">
-                        <h1 class="title"><span class="underline">Explore Osaka</span></h1>
-                      </a>
-                    </div>
-                    <p class="description">Osaka is a large port city and commercial center known for its modern architecture, nightlife and hearty street food.</p>
-                  </div>
+                <div class="intro">
+                   <h1 class="title"><span class="underline">Explore Osaka</span></h1>
                 </div>
+                <p class="description">Osaka is a large port city and commercial center known for its modern architecture, nightlife and hearty street food.</p>
               </div>
             </div>
           </li>
           <li class="slider-item">
             <div class="grid vertical">
-              <div class="column-xs-12 column-md-2 hide-mobile">
-                <div class="intro">
-                  <a href="#">
-                    <h1 class="title"><span class="underline">Explore Hokkaido</span></h1>
-                  </a>
-                </div>
-              </div>
-              <div class="column-xs-12 column-md-10">
+              <div class="column-xs-12">
                 <div class="image-holder">
                   <img src="https://assets.codepen.io/1159990/hokkaido.jpg">
                 </div>
-                <div class="grid">
-                  <div class="column-xs-12 column-md-9">
-                    <div class="intro show-mobile">
-                      <a href="#">
-                        <h1 class="title"><span class="underline">Explore Hokkaido</span></h1>
-                      </a>
-                    </div>
-                    <p class="description">Hokkaido, the northernmost of Japan’s main islands, is known for its volcanoes, natural hot springs ("onsen") and ski areas.</p>
-                  </div>
+                <div class="intro">
+                  <h1 class="title"><span class="underline">Explore Hokkaido</span></h1>
                 </div>
+                <p class="description">Hokkaido, the northernmost of Japan’s main islands, is known for its volcanoes, natural hot springs ("onsen") and ski areas.</p>
               </div>
             </div>
           </li>
@@ -131,14 +87,18 @@
               <button class="previous">
                 <span class="visually-hidden">Previous</span>
                 <span class="icon arrow-left" aria-hidden="true"></span>
-              </a>
+              </button>
               <button class="next">
                 <span class="visually-hidden">Next</span>
                 <span class="icon arrow-right" aria-hidden="true"></span>
-              </a>
+              </button>
             </div>
           </div>
       </div>
     </div>
   </div>
 </main>
+<script src="INDEX.JS"></script>
+</body>
+</html>
+
