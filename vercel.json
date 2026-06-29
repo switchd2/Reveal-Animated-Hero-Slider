@@ -1,7 +1,1 @@
-{
-  "rewrites": [
-    { "source": "/", "destination": "/INDEX.HTML" },
-    { "source": "/INDEX.CSS", "destination": "/INDEX.CSS" },
-    { "source": "/INDEX.JS", "destination": "/INDEX.JS" }
-  ]
-}
+{}
